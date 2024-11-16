@@ -20,3 +20,23 @@ section{
     display: flex;
     justify-content: space-between;
 }
+.area-despesas{
+    height: 700px;
+}
+.input-despesa{
+    
+}
+.despesa{
+    display: flex;
+    justify-content: space-between;
+}
+.despesa{
+    line-height: 35px;
+}
+dialog{
+    
+}
+.modal{
+    display: flex;
+    justify-content: center;
+}
