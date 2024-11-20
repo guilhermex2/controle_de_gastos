@@ -18,6 +18,12 @@
                 <div class="positivo">
                     <h4>SALDO</h4>
                     <span>R$---</span>
+                    <button class="add-saldo">Adicionar saldo</button>
+                    <dialog class="modalAdd">
+                        Digite o saldo:
+                        <input type="text" placeholder="Ex: 1000" class="input-add-saldo">
+                        <button class="btnAddSaldo">Adicionar</button>
+                    </dialog>
                 </div>
                 <div class="negativo">
                     <h4>SAIDAS</h4>
@@ -31,24 +37,21 @@
                 </div>
             </div>
             <div class="modal">
-                <dialog>
-                    Despesa:
+                <dialog class="modalDespesa">
+                    <p class="title-modal">ADICIONE SUA DESPESA</p>
+                    <p>Despesa:</p>
                     <input type="text" class="input-despesa">
-                    Valor:
+                    <p>Valor:</p>
                     <input type="text" class="input-valor">
                     <button class="btnSave">Save</button>
                 </dialog>
+                <div class="overlay"></div>
                 <div class="buttons">
-                    <button class="add-despesa">Adicinar despesa</button>
-                    <button class="remove-despesa">Remover despesa</button>
+                    <button class="add-despesa">Adicionar despesa</button>
                 </div>
             </div>          
         </div>
     </section>
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

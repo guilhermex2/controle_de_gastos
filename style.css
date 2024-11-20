@@ -1,42 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-    font-family: Arial;
+    font-family: 'Montserrat';
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(126,70,230,1) 94%);
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     display: flex;
     justify-content: center;
+}
+h1{
+    color: white;
 }
 section{
     display: flex;
     justify-content: center;
 }
 .container{
-    background-color: gray;
-    width: 1280px;
+    background-color: white;
+    width: 1000px;
+    height: 750px;
+    border-radius: 20px;
 }
 .area-saldos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .area-despesas{
-    height: 700px;
-}
-.input-despesa{
-    
+    height: 550px;
 }
 .despesa{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    line-height: 25px;
+    font-weight: 700;
 }
-.despesa{
-    line-height: 35px;
+h4{
+    font-size: 25px;
+}
+span{
+    font-size: 20px;
 }
 dialog{
-    
+    height: 360px;
+    width: 400px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    display: none; 
+}
+.overlay.active {
+    display: block;
+}
+.title-modal{
+    font-weight: 800;
+    font-size: 20px;
 }
 .modal{
     display: flex;
     justify-content: center;
+}
+.add-despesa{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.add-despesa:hover{
+    background-color: black;
+    color: white;
+}
+.add-saldo{
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.add-saldo:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 450px;
+        height: 700px;
+    }
+    .area-despesas{
+        height: 520px;
+    }
+    .add-saldo{
+        padding: 5px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.4s;
+        font-size: 12px;
+    }
 }
