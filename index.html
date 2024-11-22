@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Controle de despesas</title>
 </head>
 <body>
@@ -18,9 +18,10 @@
                 <div class="positivo">
                     <h4>SALDO</h4>
                     <span>R$---</span>
-                    <button class="add-saldo">Adicionar saldo</button>
+                    <button class="add-saldo">Depositar</button>
                     <dialog class="modalAdd">
-                        Digite o saldo:
+                        <p class="title-modal">DEPOSITE SEU SALDO</p>
+                        <p>Saldo:</p>
                         <input type="text" placeholder="Ex: 1000" class="input-add-saldo">
                         <button class="btnAddSaldo">Adicionar</button>
                     </dialog>
@@ -48,10 +49,11 @@
                 <div class="overlay"></div>
                 <div class="buttons">
                     <button class="add-despesa">Adicionar despesa</button>
+                    <button class="btnClear">Limpar</button>
                 </div>
             </div>          
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

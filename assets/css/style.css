@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(126,70,230,1) 94%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*INTERFACE*/
+header{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    width: 1000px;
+    height: 750px;
+    border-radius: 20px;
+}
+.area-saldos{
+    display: flex;
+    justify-content: space-around;
+}
+.area-despesas{
+    height: 550px;
+    padding-top: 20px;
+}
+.despesa{
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+    font-weight: 700;
+}
+h4{
+    font-size: 25px;
+}
+span{
+    font-size: 20px;
+}
+
+/*MODAL*/
+.modal{
+    display: flex;
+    justify-content: center;
+}
+.title-modal{
+    font-weight: 800;
+    font-size: 20px;
+}
+dialog{
+    height: 360px;
+    width: 400px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+    display: none; 
+}
+.overlay.active {
+    display: block;
+}
+
+/*BOTÕES*/
+button{
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 430px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 400px;
+        height: 700px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .area-despesas{
+        height: 500px;
+    }
+    .add-saldo{
+        padding: 5px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    dialog{
+        width: 300px;
+    }
+}
+@media (max-width: 415px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 400px;
+        height: 630px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .area-despesas{
+        height: 445px;
+    }
+    .add-saldo{
+        padding: 5px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    dialog{
+        width: 300px;
+    }
+}
+@media (max-width:380px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 340px;
+        height: 600px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .area-despesas{
+        height: 420px;
+    }
+    .add-saldo{
+        padding: 5px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    dialog{
+        width: 300px;
+    }
+}
+@media (max-width: 390px) {
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 340px;
+        height: 590px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .area-despesas{
+        height: 410px;
+    }
+    .add-saldo{
+        padding: 5px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    dialog{
+        width: 300px;
+    }
+}
+@media (max-width: 320px){
+    body{
+        overflow: hidden;
+    }
+    .container{
+        width: 310px;
+        height: 600px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .area-despesas{
+        height: 400px;
+    }
+    .add-saldo{
+        padding: 5px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.4s;
+        font-size: 12px;
+    }
+    dialog{
+        width: 300px;
+    }
+}
